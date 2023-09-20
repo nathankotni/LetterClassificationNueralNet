@@ -7,7 +7,7 @@ import random
 
 
 resizeDim = 150
-resizeDimSmall = resizeDim - (int((random.random() * 4) + 2) * 10)
+resizeDimSmall = 130
 
 
 
