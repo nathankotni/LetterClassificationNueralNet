@@ -2,6 +2,7 @@
 
 This is a python project that can collect thousands of lowercase letter image data by using Selenium to web-scrape calligrapher.ai (found in collectData.py and compressed collected data of more than 15,000 images found in Images.zip and ImagesTest.zip), then uses Pillow and numpy to normalize all the data to have a given minimum margin space and standard image dimensions (150 x 150) (found in normalizeData.py), then uses this data to train and test a classification convolutional neural network made with Tensorflow and Keras (trains model in letterModel.py and the compressed model file this creates is found in letterModel.model.zip), and then finally uses Pygame to create a user-interface panel which the user can draw a letter on and press any key for the model to attempt to guess what the letter they drew was (found in drawLetter.py). The model achieved a test accuracy of over 93% on it's last epoch of training and is able to guess user drawings of reasonable size and legebility with good accuracy. 
 
+
 ## How To Run ##
 
 Download all files in the project, then unzip Images.zip ImagesTest.zip and letterModel.model.zip. Ensure that the resulting folders have the same name but just without the .zip. 
